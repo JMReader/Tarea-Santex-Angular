@@ -1,0 +1,14 @@
+<main>
+  <div id="author">Coro reader Juan Manuel</div>
+  <div *ngIf="showList == true" class="lista">
+    <h3>Productos:</h3>
+    <ul>
+      <li *ngFor="let producto of productos" ><b>{{producto.nombre}}</b>, Precio: <b>${{producto.costo}}</b></li>
+    </ul>
+  </div>
+  <div style="margin: 2rem" *ngIf="showList == false" id="warning">
+   <b>No hay productos para mostrar por el momento, por favor intente mas tarde</b> 
+  </div>
+  <button *ngIf="showList == false" (click)=" changeVisibility()" mat-raised-button > Mostrar Productos</button>
+  <button *ngIf="showList == true" (click)=" changeVisibility()" mat-raised-button > Ocultar Productos</button>
+</main>

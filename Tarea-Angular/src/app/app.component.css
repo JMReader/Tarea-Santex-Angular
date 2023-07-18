@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: rgb(4, 4, 4);
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+#warning{
+    background-color: rgb(202, 33, 154);
+    color: #ffffff;
+    padding: 1rem;
+    width: 60%;
+    
+}
+
+button{
+    display: flex;
+    color: #ffffff;
+    width: min-content;
+    background-color: rgb(202, 33, 154);
+}
+.lista ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+li{
+    border: 1px solid #ffffff;
+}
+/* breakpoint celulares */
+@media (max-width: 640px){
+    main{
+        align-items: center;
+    }
+    .lista ul{
+        width: 70%;
+    }
+     
+    }
